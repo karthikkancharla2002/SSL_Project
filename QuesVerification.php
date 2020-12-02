@@ -35,10 +35,17 @@ if (@$_POST['q5a'] == $_POST['q5Correct']){
 }
 echo "Your score is $score / 5";
 
-// $_SESSION['username'] 
+$un=$_SESSION['username'];
+$user = mysqli_query($connect, "SELECT * FROM userinfo WHERE username='$un'");
+
+while($user_row = mysqli_fetch_assoc($user)){
+    $totalScore = $score + $user_row['score'];
+    mysqli_query($connect, "UPDATE userinfo SET score='$totalScore' WHERE username='$un'");
+}
 
 ?>
-<a href="index2.php">Click here to view Leaderboard.</a>
+<br>
+<a href="leaderboard.php">Click here to view Leaderboard.</a>
 
 
 </body>

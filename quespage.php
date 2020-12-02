@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -15,7 +16,6 @@ session_start();
 <?php	
 
 require("connect.php");
-
 print_r($_SESSION['username']);
 $ids = array();
 $randId=rand(0,11);
