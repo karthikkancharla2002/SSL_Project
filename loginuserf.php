@@ -1,3 +1,8 @@
+<?php
+// Start the session
+session_start();
+?>
+
 <?php include('connect.php') ?>
 <!DOCTYPE html>
 <html>

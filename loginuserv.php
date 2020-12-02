@@ -1,5 +1,5 @@
 <?php	
-
+// session_start();
 require("connect.php");
 
 if (isset($_POST['login_user'])) {
@@ -19,13 +19,18 @@ if (isset($_POST['login_user'])) {
         $results = mysqli_query($connect, $query);
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
-          $_SESSION['success'] = "You are now logged in";
-          header('location: index.php');
+          $_SESSION['success'] = 1;
+          echo "You are logged in!";
+          //header('location: index2.php');
         }else {
             array_push($errors, "Wrong username/password ");
             echo "Wrong username/password!";
         }
     }
+
+    echo "
+	<a href='quespage.php'> Take a quiz? </a>
+";
   }
   
 ?>

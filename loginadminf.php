@@ -1,3 +1,4 @@
+
 <?php include('connect.php') ?>
 <!DOCTYPE html>
 <html>
@@ -20,7 +21,7 @@
   	  <input type="password" name="password">
   	</div>
   	<div class="input-group">
-  	  <button type="submit" class="btn" name="login_admin">Login</button>
+  	  <button type="submit" class="btn" name="login_admin" >Login</button>
   	</div>
   	<p>
   		Not an Admin Yet? <a href="signupf.php">Sign Up</a>
