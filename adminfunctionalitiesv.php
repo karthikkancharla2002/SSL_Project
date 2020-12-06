@@ -23,8 +23,21 @@ $query="CREATE TABLE `$topicins` (
     `option4` varchar(120) NOT NULL,
     `correct` varchar(120) NOT NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
+  
+$queryalt="ALTER TABLE `$topicins`
+ADD PRIMARY KEY (`id`)";
+$queryai="ALTER TABLE `$topicins`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT";
+$querycommit="COMMIT";
+
+
+
 
 mysqli_query($connect,$query);
+mysqli_query($connect,$queryalt);
+mysqli_query($connect,$queryai);
+mysqli_query($connect,$querycommit);
+
 $query2 = "SELECT * FROM topics WHERE topic='$topicins'";
 $result = mysqli_query($connect, $query2);
 if (mysqli_num_rows($result) == 0 && isset($topicins)) {
@@ -58,12 +71,19 @@ $option3=@$_POST['option3'];
 $option4=@$_POST['option4'];
 $correct=@$_POST['option_correct'];
 
-$queryW= "INSERT INTO $topicinsw ('question', 'option1', 'option2', 'option3', 'option4', 'correct') VALUES ('$question', '$option1', '$option2', '$option3', '$option4', '$correct')";
-$insert= mysqli_query($connect, $queryW);
+echo "$topicinsw $question $option1 \n";
+// ('id','question', 'option1', 'option2', 'option3', 'option4', 'correct')
+//$queryW= "INSERT INTO $topicinsw (question, option1, option2, option3, option4, correct) VALUES ($question, $option1, $option2, $option3, $option4, $correct)";
+//$insert= mysqli_query($connect, $queryW);
 
-// $query= "INSERT INTO cricket ('question', 'option1', 'option2', 'option3', 'option4', 'correct') VALUES ('jni', 'jnnnonkl', 'hvuugrfbu','rxxrt','bhjhhjhj', 'vgyvguvg')";
+//$query3 = "INSERT INTO `$topicinsw` (`id`,`question`,`option1`,`option2`,`option3`,`option4`,`correct`) VALUES ('jni2', 'jnnnonkl', 'hvuugrfbu','rxxrt','bhjhhjhj', 'vgyvguvg')";
+$query3 = "INSERT INTO `$topicinsw` (`question`,`option1`,`option2`,`option3`,`option4`,`correct`) VALUES ('$question', '$option1', '$option2', '$option3', '$option4', '$correct')";
+$insert= mysqli_query($connect, $query3);
+
+//$query= "INSERT INTO cricket (question, option1, option2, option3, option4, correct) VALUES ('jni', 'jnnnonkl', 'hvuugrfbu','rxxrt','bhjhhjhj', 'vgyvguvg')";
 // $query= "INSERT INTO cricket VALUES ('','$question', '$option1', '$option2', '$option3', '$option4', '$correct')";
 // mysqli_query($connect, "INSERT INTO cricket VALUES ('','$question', '$option1', '$option2', '$option3', '$option4', '$correct')");
+
 ?>
 
 </body>
