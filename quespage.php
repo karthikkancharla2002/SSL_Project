@@ -20,7 +20,8 @@ print_r($_SESSION['username']);
 $ids = array();
 $randId=rand(0,11);
 array_push($ids,$randId);
-$question = mysqli_query($connect, "SELECT * FROM questions WHERE id = '$randId'");
+$topic=$_POST['topic'];
+$question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
 while($question_row = mysqli_fetch_assoc($question)){
   $q1 =$question_row['question'];
   $q1o1 =$question_row['option1'];
@@ -34,7 +35,7 @@ while(in_array($randId, $ids)){
   $randId=rand(0, 11);
 }
 array_push($ids,$randId);
-$question = mysqli_query($connect, "SELECT * FROM questions WHERE id = '$randId'");
+$question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
 while($question_row = mysqli_fetch_assoc($question)){
   $q2 =$question_row['question'];
   $q2o1 =$question_row['option1'];
@@ -48,7 +49,7 @@ while(in_array($randId, $ids)){
   $randId=rand(0, 11);
 }
 array_push($ids,$randId);
-$question = mysqli_query($connect, "SELECT * FROM questions WHERE id = '$randId'");
+$question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
 while($question_row = mysqli_fetch_assoc($question)){
   $q3 =$question_row['question'];
   $q3o1 =$question_row['option1'];
@@ -62,7 +63,7 @@ while(in_array($randId, $ids)){
   $randId=rand(0, 11);
 }
 array_push($ids,$randId);
-$question = mysqli_query($connect, "SELECT * FROM questions WHERE id = '$randId'");
+$question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
 while($question_row = mysqli_fetch_assoc($question)){
   $q4 =$question_row['question'];
   $q4o1 =$question_row['option1'];
@@ -76,7 +77,7 @@ while(in_array($randId, $ids)){
   $randId=rand(0, 11);
 }
 array_push($ids,$randId);
-$question = mysqli_query($connect, "SELECT * FROM questions WHERE id = '$randId'");
+$question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
 while($question_row = mysqli_fetch_assoc($question)){
   $q5 =$question_row['question'];
   $q5o1 =$question_row['option1'];

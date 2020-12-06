@@ -29,7 +29,7 @@ if (isset($_POST['login_user'])) {
     }
 
     echo "
-	<a href='quespage.php'> Take a quiz? </a>
+	<a href='quiztopics.php'> Take a quiz? </a>
 ";
   }
   
