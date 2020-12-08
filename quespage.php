@@ -1,5 +1,7 @@
+
 <?php
 session_start();
+error_reporting(E_ALL & ~E_NOTICE);
 ?>
 
 <!DOCTYPE html>
@@ -7,6 +9,12 @@ session_start();
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="quespage.js"></script>
+    <link rel="stylesheet" type="text/css" href="quespage.css">
+    <style>
+      body{background-color: rgb(184, 247, 241);
+      
+      margin:20px;}
+    </style>
     <title>Questions Page</title>
   </head>
   
@@ -16,13 +24,15 @@ session_start();
 <?php	
 
 require("connect.php");
+echo "<b>Username:</b>";
 print_r($_SESSION['username']);
+echo "";
 $ids = array();
 $randId=rand(0,11);
 array_push($ids,$randId);
-$topic=$_POST['topic'];
+$topic=@$_POST['topic'];
 $question = mysqli_query($connect, "SELECT * FROM $topic WHERE id = '$randId'");
-while($question_row = mysqli_fetch_assoc($question)){
+while($question_row = @mysqli_fetch_assoc($question)){
   $q1 =$question_row['question'];
   $q1o1 =$question_row['option1'];
   $q1o2 =$question_row['option2'];  
@@ -89,9 +99,11 @@ while($question_row = mysqli_fetch_assoc($question)){
 
 
 echo <<<_END
+<ol>
 <li>
+
 <div>
-<form action='QuesVerification.php' method='POST'>
+<form action='QuesVerification.php' method='POST' >
 
 <p class="questionc" id="Q1">$q1</p>
 <div>
@@ -112,6 +124,12 @@ echo <<<_END
 </div>
 <input type="hidden" name="q1Correct" value="$q1Correct">
 
+</li>
+
+
+<li>
+
+
 <p class="questionc" id="Q2">$q2</p>
 <div>
   <input type="radio" name="q2a" id="question-2-answers-A" value="$q2o1" />
@@ -131,6 +149,8 @@ echo <<<_END
 </div>
 <input type="hidden" name="q2Correct" value="$q2Correct">
 
+</li>
+<li>
 
 <p class="questionc" id="Q3">$q3</p>
 <div>
@@ -151,6 +171,9 @@ echo <<<_END
 </div>
 <input type="hidden" name="q3Correct" value="$q3Correct">
 
+</li>
+<li>
+
 <p class="questionc" id="Q4">$q4</p>
 <div>
   <input type="radio" name="q4a" id="question-4-answers-A" value="$q4o1" />
@@ -170,6 +193,9 @@ echo <<<_END
 </div>
 <input type="hidden" name="q4Correct" value="$q4Correct">
 
+</li>
+<li>
+
 <p class="questionc" id="Q5">$q5</p>
 <div>
   <input type="radio" name="q5a" id="question-5-answers-A" value="$q5o1" />
@@ -188,14 +214,17 @@ echo <<<_END
   <label for="question-5-answers-D" id="Q5D">$q5o4</label>
 </div>
 <input type="hidden" name="q5Correct" value="$q5Correct">
-<input type="submit" name="Submit" value="Submit">
+<br>
+<button style="width:120px" type="submit" class="btn" name="Submit">Submit</button>
+
 
 </form>
 </div>
 </li>
+</ol>
 _END;
 
-
+// <input type="submit" name="Submit" value="Submit">
 
 ?>
 

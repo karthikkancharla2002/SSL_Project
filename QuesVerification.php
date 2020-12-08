@@ -8,6 +8,9 @@ session_start();
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="quespage.js"></script>
+    <style>
+        body{background-color: #ccffff;}
+    </style>
     <title>Questions Page</title>
   </head>
   
@@ -33,7 +36,7 @@ if (@$_POST['q4a'] == $_POST['q4Correct']){
 if (@$_POST['q5a'] == $_POST['q5Correct']){
     $score=$score+1;
 }
-echo "Your score is $score / 5";
+echo  "<div><br><br><br><br><br><br><br><br><br><br><center><h1><big>Your score is $score / 5</big></h1></center></div>";
 
 $un=$_SESSION['username'];
 $user = mysqli_query($connect, "SELECT * FROM userinfo WHERE username='$un'");
@@ -45,7 +48,9 @@ while($user_row = mysqli_fetch_assoc($user)){
 
 ?>
 <br>
-<a href="leaderboard.php">Click here to view Leaderboard.</a>
+<center>
+<a href="leaderboard.php">Click here to view Leaderboard</a>
+</center>
 
 
 </body>

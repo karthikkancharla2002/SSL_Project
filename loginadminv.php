@@ -11,6 +11,7 @@ if (isset($_POST['login_admin'])) {
     }
     if (empty($password)) {
         array_push($errors, "Password is required");
+        echo "Enter Password!!!";
     }
   
     if (count($errors) == 0) {
@@ -20,10 +21,10 @@ if (isset($_POST['login_admin'])) {
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
-          header('location: index.php');
+          header('location: adminfunctionalities.php');
         }else {
             array_push($errors, "Wrong username/password ");
-            echo "Hey Admin! Wrong username/password!";
+            echo "You have entered a wrong username/password!";
         }
     }
   }

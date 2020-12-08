@@ -1,5 +1,6 @@
 /* Bordered form */
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: Arial, Helvetica, sans-serif;
+ }
 form {
     border: 3px solid #f1f1f1;
   }
@@ -18,8 +19,8 @@ form {
 
   /* Set a style for all buttons */
   button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #66def3;
+    color: rgb(47, 36, 48);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;

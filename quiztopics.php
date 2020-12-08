@@ -6,8 +6,10 @@
     <script type="text/javascript" src="quespage.js"></script>
     <title>Questions Page</title>
   </head>
-  
-
+  <center>
+  <h1 style="color:black;"> Select a Quiz topic from below</h1>
+</center>
+  <link rel="stylesheet" type="text/css" href="index.css">
 <body>
 
 <?php	
@@ -23,7 +25,9 @@ while($topics_row = mysqli_fetch_assoc($query)){
 echo "<form action='quespage.php' method='POST'>";
 foreach ($topics_arr as $topic) {
     echo <<<_END
-    <button name="topic" value="$topic" type="submit"> $topic </button>
+    <center>
+    <button name="topic" value="$topic" type="submit"> $topic </button><br>
+    </center>
     _END;
 }
 echo "</form>";

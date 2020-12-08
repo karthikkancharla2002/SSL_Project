@@ -1,236 +1,232 @@
 body {
-    font-family: "Trebuchet MS", Verdana, sans-serif;
-    font-size: 16px;
-    background-color: rgb(184, 247, 241);
-    color: #000000;
-    margin:0px;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  background-color: rgb(184, 247, 241);
+  color: #ffffff;
+  margin:0px;
 }
 /*Banner */
 #banner {
-    position: relative; 
-    top:0px;
-    left:0px; 
-    margin:0px;
-    height:750px;
-    width:100%;
-    /* display: flex; */
-    overflow: hidden;
+  position: relative; 
+  top:0px;
+  left:0px; 
+  margin:0px;
+  height:750px;
+  width:100%;
+  /* display: flex; */
+  overflow: hidden;
 }
 
 ul{
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 } 
 li {
-    float: left;
+  float: left;
 }
 
 nav li a {
-    display: block;
-    color: rgb(184, 247, 241);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: rgb(184, 247, 241);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+  background-color: #111;
 }
 
 .active {
-    background-color: #0a0a0a;
+  background-color: #0a0a0a;
 }
 
 #bg-video{
-        position: absolute;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        height:auto;
-        width:auto;
-        z-index: -100;
-    }
-  
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      height:auto;
+      width:auto;
+      z-index: -100;
+  }
+
 .content {
-    color: rgb(184, 247, 241);
-    width: 100%;
-    padding: 20px;
+  color: rgb(184, 247, 241);
+  width: 100%;
+  padding: 20px;
 }
 
 #main-title{ 
-    color: rgb(184, 247, 241); 
-    /* font-family: Helvetica Neue', sans-serif'; */
-    /* font-family: 'Righteous', cursive;  */
-    font-family: Arnoldboecklin, monospace;
-    letter-spacing: 1px;
-    line-height: 32px;
+  color: rgb(184, 247, 241); 
+  /* font-family: Helvetica Neue', sans-serif'; */
+  /* font-family: 'Righteous', cursive;  */
 
-    /* font-family: 'Brush Script MT', cursive; */
-    font-size: 75px; 
-    font-weight: bold; 
-    text-align: left; 
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  /* font-family: 'Brush Script MT', cursive; */
+  font-size: 75px; 
+  font-weight: bold; 
+  text-align: left; 
 }
 
 #subtitle{
-     color:rgb(184, 247, 241);
-     font-family: 'Open Sans Condensed', sans-serif; 
-     font-size: 18px; 
-     line-height: 28px; 
-     margin: 0 0 28px; 
+   color:rgb(184, 247, 241);
+   font-family: 'Open Sans Condensed', sans-serif; 
+   font-size: 18px; 
+   line-height: 28px; 
+   margin: 0 0 28px; 
 }
 
 
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
 
-
-/* Set a style for all buttons */
-/*  
 button {
-    background-color: #66def3;
-    color: rgb(47, 36, 48);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 20%;
-    opacity: 0.9;
-  }
-  
-  button:hover {
-    opacity:1;
-  }
-  
-  /* Extra styles for the cancel button */
-  /* .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-  }  */ 
-/*   
-  .hvr-border-fade {
-    display: inline-block;
-    vertical-align: middle;
-    /* -webkit-transform: translateZ(0); */
-    /* transform: translateZ(0); */
-    /* box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow;
-    transition-property: box-shadow;
-    box-shadow: inset 0 0 0 4px #0c0b0b, 0 0 1px rgba(194, 18, 230, 0);
+  background-color: #66def3;
+  color: rgb(47, 36, 48);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+ 
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}  
+
+
+#about-the-project{
+background-image: url("imagesv/question_marks.jpg");
+background-color: #26272b;
+padding-top:5%;
+
+}
+
+#heading_p{
+margin:0 30%;
+margin-bottom:5%;
+padding: 5%;
+background-color:#26272b; 
+}
+
+#heading_p h2{
+color:#fff;
+font-size:35px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
+}
+
+#heading_p p{
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:20px;
+line-height:24px;
+color:#737373;
+text-align:center;
+}
+
+
+#project-details{
+background-color:#26272b; 
+background-color:;
+   font-family: 'Open Sans Condensed', sans-serif; 
+   font-size: 30px; 
+   line-height: 28px; 
+   margin: 0 0 28px; 
+text-align: center;
+}
+
+article div{
+background-color:#26272b; 
+text-align:left; 
+vertical-align: middle; 
+padding:20px 47px;
+width:40%;
+display:inline-block;
+text-align:center;
+padding:5% 5%;
+margin-left:5%;
+margin-right:10%;
+margin-bottom:5%;
+}
+
+article h3{
+color:#fff;
+font-size:20px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
+}
+article p{
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+text-align:center;
+}
+article img{
+width:20%;
+max-height: 10%;
+vertical-align: middle; 
+display:inline-block;
+margin-right:5%;
+margin-bottom:5%;
+}
     
-  } */
-  /* .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
-    box-shadow: inset 0 0 0 4px #2098d1, 0 0 1px rgba(0, 0, 0, 0); */ 
-  .hvr-radial-out {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    overflow: hidden;
-    background: #0f0e0e;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    }
-    .hvr-radial-out:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #18679c;
-    border-radius: 100%;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    }
-    .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {
-    color: rgb(224, 24, 24);
-    }
-    .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    }
-      
+
+
+
+
+
 /*Footer styling*/
 footer{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+text-align:center;
 }
 
 footer h3{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px;
-  text-align:center;
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
 }
 
 footer hr{
-  border-top-color:#bbb;
-  opacity:0.5;
-  margin:20px 0;
+border-top-color:#bbb;
+opacity:0.5;
+margin:20px 0;
+}
+footer table{
+text-align:center;
+table-layout: fixed; 
+}
+.copyright-text{
+text-align:center;
 }
 
 footer th{
-  color:#737373;
-  text-align: center;
-}
+color:#737373;
+text-align: center;
+} 

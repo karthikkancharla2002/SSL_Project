@@ -11,12 +11,12 @@
   <body>
   <section id="banner">
     <video autoplay muted loop id="bg-video">Your browser does not support HTML5 video.
-          <source src="imagesv\technology-network95.1.mp4" type="video/mp4" />
+          <source src="imagesv\tech.mp4" type="video/mp4" />
     </video>
 
-		<nav>
+    <nav>
     <ul>
-        <li><a href="index.php" class="active">Home</a></li>
+        <li><a href="index2.php" class="active">Home</a></li>
         <li><a href="leaderboard.php">Leaderboard</a></li>
         <li><a href="loginuserf.php">User Login</a></li>
         <li><a href="signupf.php">User Sign-Up</a></li>
@@ -28,66 +28,72 @@
     
       
     <div class="content">
-        <h1 id="main-title">Interactive Quiz Game </h1>
+        <h1 id="main-title">Interactive<br>Quiz<br>Game</h1>
         <p id="subtitle">Welcome to the Interactive Quiz game, where you can have fun while enhancing your knowledge.</p>
-
-        
-        <!-- <div class="svg-wrapper">
-          <svg height="60" width="320" xmlns="loginuserf.php">
-          <rect class="shape" height="60" width="320" />
-          <a xlink:href="loginuserf.php"> Join now</a>
-          </svg></div> -->
-          <!-- <a class="text" href="loginuserf.php">Join Now </a> -->
-
-        
-        <center><a href="loginuserf.php" class="hvr-radial-out">Join Now</a></center>
+  
+        <button onclick="location.href='loginuserf.php'" class="link" >Join Now</button>
         <button onclick="location.href='loginuserf.php'" class="link" >Login Now</button>
         <button onclick="location.href='leaderboard.php'" class="link" >Leaderboard</button>
     </div>
+
   </section>
     <!-- </div> -->
 
 
-    <!-- <section>
-    <div id="about project">
-        <p id="project-details">Welcome to the Interactive Quiz game, where you can have fun while enhancing your knowledge. The main functionalities of this website are :</p>
-        <ol>
-          <li>User Functionalitites :</li>
-          <li>Admin Functionalities: An Admin can add new topics to the database. Users can choose quizzes from these new topics. Admins can also add new questions to the existing databases.</li>
-          <li><p>Users can see where they stand with respect to  others, in this leaderboard. It is a medium where people flex their brains. <a href="leaderboard.php">View Leaderboard</a></p></li>
-        </ol>
-    </div>
-    </section> -->
-
-  <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'UserFunc')">UF</button>
-  <button class="tablinks" onclick="openCity(event, 'AdminFunc')">AF</button>
-  <button class="tablinks" onclick="openCity(event, 'LeaderBoard')">LB</button>
+<section id="about-the-project">
+  <div id="heading_p">
+    <h2>About the Project </h2>
+        <p id="project-details">The main functionalities of this website are :</p>
+        <!-- <div class="tab">
+        <button class="seclinks" onclick= "location.href='#UserFunc'" >User Functionalities </button>
+        <button class="seclinks" onclick=""location.href='#AdminFunc'"">Admin Functionalities</button>
+        <button class="seclinks" onclick=""location.href='#Leaderboard'"">LeaderBoard</button>
+        </div> -->
   </div>
+    
 
-<!-- Tab content -->
-<div id="UserFunc" class="tabcontent">
+
+<article>
+<div id="UserFunc" class="func">
   <h3>User Functionalities</h3>
-  <p> A User can sign up over this website to save their progress, they can take quizzes on various topics and have fun while learning something new.</p>
+  <p> A User can sign up over this website to save their progress, they can take quizzes on various topics and have fun while learning something new.<br>
+      A user can choose their nicknames and can view their position in the leaderboard to see where they stand with repect to others.
+  </p>
 </div>
+<img src="imagesv/users.png">
+</article>
 
-<div id="AdminFunc" class="tabcontent">
+<article>
+
+<div id="AdminFunc" class="func">
   <h3>Admin Functionalities</h3>
-  <p>Admin Functionalities: An Admin can add new topics to the database. Users can choose quizzes from these new topics. Admins can also add new questions to the existing databases.</p>
+  <p>Admin Functionalities: An Admin can add new topics to the database. Users can choose quizzes from these new topics.<br>
+     Admins can also add new questions to the existing databases.</p>
 </div>
+<img src="imagesv/admin.jpg">
 
-<div id="LeaderBoard" class="tabcontent">
+</article>
+
+<article>
+<div id="LeaderBoard" class="func">
   <h3>Leader Board</h3>
-  <p>Users can see where they stand with respect to  others, in this leaderboard. It is a medium where people flex their brains. </p>
+  <p>Users can see where they stand with respect to  others, in this leaderboard.<br>
+     This leaderboard gets updated each time a user takes a quiz and users can see their leaderboard positions.
+  </p>
 </div>
+<img src="imagesv/leaderboard.jpg">
+</article>
+</section>
+
 
 
   <section id="footer">
     <footer>
-      <h3> This webiste is a project done for CS213, and it is created by:  </h3>
-      <table style="width:100%">
+      <h3> This website is a project done for CS213, and it is created by:  </h3>
+      <center>
+      <table>
       <tr>
-        <th>Nampally Pranav</th>
+        <th>Nampally Pranav   </th>
         <th>Karthik Kancharla</th>
         <th>T Satwik</th>
       </tr>
@@ -97,10 +103,10 @@
         <th>190030043</th>
       </tr>
       </table>
-      </div>
+      </center>
+      
       <hr>
-      <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved     </p>
-          
+      <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved</p>
     </footer>
 
   </section>

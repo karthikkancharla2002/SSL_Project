@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="quespage.js"></script>
+    <style>
+        body{background-color: #ccffff;}
+    </style>
+    <title>Questions Page</title>
+  </head>
 <?php
 
 require("connect.php");
@@ -35,10 +45,12 @@ if (mysqli_num_rows($result) == 0 && count($errors) == 0) {
   	$query = "INSERT INTO userinfo (username, firstname, lastname, email, phone, country, password)  
   			  VALUES('$username', '$firstname', '$lastname', '$email', '$phone', '$country', '$password')";
     mysqli_query($connect, $query);
-    echo "Sign-up successful";
+    echo "<div><br><br><br><br><br><br><br><br><br><br><center><h1><big>Sign-up successful</big></h1></center></div>";
 }
 else{
-    echo "ERRRROOOOORRRR!!!!!";
+    echo "<div><br><br><br><br><br><br><br><br><br><br><center><h1><big>ERROR!!!!!</big></h1></center></div>";
 }
 
 ?>
+</body>
+</html>
