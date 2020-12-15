@@ -1,0 +1,233 @@
+body {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+  background-color: rgb(184, 247, 241);
+  color: #ffffff;
+  margin:0px;
+}
+/*Banner */
+#banner {
+  position: relative; 
+  top:0px;
+  left:0px; 
+  margin:0px;
+  height:750px;
+  width:100%;
+  /* display: flex; */
+  overflow: hidden;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+} 
+li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: rgb(184, 247, 241);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #0a0a0a;
+}
+
+#bg-video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      height:auto;
+      width:auto;
+      z-index: -100;
+  }
+
+.content {
+  color: rgb(184, 247, 241);
+  width: 100%;
+  padding: 20px;
+}
+
+#main-title{ 
+  color: rgb(184, 247, 241); 
+  /* font-family: Helvetica Neue', sans-serif'; */
+  /* font-family: 'Righteous', cursive;  */
+
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  /* font-family: 'Brush Script MT', cursive; */
+  font-size: 75px; 
+  font-weight: bold; 
+  text-align: left; 
+}
+
+#subtitle{
+   color:rgb(184, 247, 241);
+   font-family: 'Open Sans Condensed', sans-serif; 
+   font-size: 18px; 
+   line-height: 28px; 
+   margin: 0 0 28px; 
+}
+
+
+
+button {
+  background-color: #66def3;
+  color: rgb(47, 36, 48);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+ 
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}  
+
+
+#about-the-project{
+background-image: url("imagesv/question_marks.jpg");
+background-color: #26272b;
+padding-top:5%;
+
+}
+
+#heading_p{
+margin:0 30%;
+margin-bottom:5%;
+padding: 5%;
+background-color:#26272b; 
+}
+
+#heading_p h2{
+color:#fff;
+font-size:35px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
+}
+
+#heading_p p{
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:20px;
+line-height:24px;
+color:#737373;
+text-align:center;
+}
+
+
+#project-details{
+background-color:#26272b; 
+background-color:;
+   font-family: 'Open Sans Condensed', sans-serif; 
+   font-size: 30px; 
+   line-height: 28px; 
+   margin: 0 0 28px; 
+text-align: center;
+}
+
+article div{
+background-color:#26272b; 
+text-align:left; 
+vertical-align: middle; 
+padding:20px 47px;
+width:40%;
+display:inline-block;
+text-align:center;
+padding:5% 5%;
+margin-left:5%;
+margin-right:10%;
+margin-bottom:5%;
+}
+
+article h3{
+color:#fff;
+font-size:20px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
+}
+article p{
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+text-align:center;
+}
+article img{
+width:20%;
+max-height: 10%;
+vertical-align: middle; 
+display:inline-block;
+margin-right:5%;
+margin-bottom:5%;
+}
+    
+
+
+
+
+
+/*Footer styling*/
+footer{
+background-color:#26272b;
+padding:45px 0 20px 0px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+text-align:center;
+}
+
+footer h3{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px;
+text-align:center;
+}
+
+footer hr{
+border-top-color:#bbb;
+opacity:0.5;
+margin:20px 0;
+}
+footer table{
+text-align:center;
+table-layout: fixed; 
+width:75%
+}
+.copyright-text{
+text-align:center;
+}
+
+footer th{
+color:#737373;
+text-align: center;
+} 
